@@ -7,7 +7,7 @@ function Navbar() {
 			<nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
 				<div className="container-fluid">
 					<Link className="navbar-brand" to="/">
-						Navbar
+						MediKit
 					</Link>
 					<button
 						className="navbar-toggler"
@@ -45,6 +45,11 @@ function Navbar() {
 							<li className="nav-item">
 								<Link className="nav-link" to="/schedules-add">
 									Add
+								</Link>
+							</li>
+							<li className="nav-item">
+								<Link className="nav-link" to="/">
+									{localStorage.getItem('medikit-email')}
 								</Link>
 							</li>
 							
